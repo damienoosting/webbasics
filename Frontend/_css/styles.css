@@ -1,0 +1,262 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    line-height: 1;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #222;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000;
+}
+
+nav a {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+nav a.selected {
+    background-color: orange;
+    color: #000;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    background-position: center center;
+    background-image: url(../_img/homepagefoto.jpg);
+    background-size: cover;
+}
+
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 10px;
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    text-align: left;
+    border: 1px solid #ccc;
+    padding: 40px;
+    margin: 40px;
+    position: relative;
+    min-width: 50%;
+    width: 100%;
+    max-width: 90%;
+}
+
+section legend {
+    text-transform: capitalize;
+    position: absolute;
+    padding: 10px;
+    top: -24px;
+    left: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 28px;
+    background-color: #222;
+}
+
+ul li {
+    text-transform: capitalize;
+    line-height: 1.6;
+}
+
+h2 {
+    text-transform: capitalize;
+    color: #222;
+    background-color: orange;
+    font-weight: 900;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    text-transform: capitalize;
+    color: orange;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+ul li a {
+    text-transform: capitalize;
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: orange;
+}
+
+p {
+    padding-bottom: 15px;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    width: 100%;
+}
+
+form.search {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+form label {
+    display: inline-block;
+    padding: 10px 0px;
+}
+
+form label i {
+    display: inline-block;
+    padding: 0px 0px 0px 5px;
+    color: red;
+}
+
+form input,
+form textarea {
+    line-height: 1;
+    text-align: left;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    line-height: 1.4;
+    text-decoration: none;
+    font-size: 14px;
+    width: 100%;
+    border: 0px;
+    display: inline-block;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+form input[disabled],
+form textarea[disabled] {
+    background-color: transparent;
+}
+
+a.button,
+button {
+    margin: 10px 0px;
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+    line-height: 1.4;
+    text-decoration: none;
+    font-size: 14px;
+    width: 100%;
+    max-width: 240px;
+    display: inline-block;
+    text-align: center;
+    border: 0px;
+    color: #000;
+    background-color: orange;
+}
+
+a.red,
+button.red {
+    color: #fff;
+    background-color: red;
+}
+
+form.search button {
+    margin: 0px;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-wrap: wrap
+    }
+
+    section legend {
+        font-size: 22px;
+    }
+
+    header {
+        height: 20vh;
+    }
+
+    section {
+        padding: 20px;
+        margin: 40px 20px;
+    }
+}
